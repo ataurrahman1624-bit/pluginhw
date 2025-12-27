@@ -1,0 +1,97 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    outline: 0;
+}
+ul,ol{
+    list-style-type: none;
+}
+a{
+    text-decoration: none;
+}
+.container{
+    width: 900px;
+    margin: auto;
+    position: relative;
+}
+.row{
+    display: flex;
+    flex-wrap: wrap;
+}
+
+body{
+    font-family: arial;
+}
+.all {
+    padding: 0 15px;
+    margin-top: 50px;
+}
+.all img{
+    width: 100%;
+    height: 450px;
+    object-fit: cover;
+    transform: scale(0.8);
+    filter: grayscale(100%);
+    transition: 0.35s;
+}
+
+
+.all .slick-center img{
+    transform: scale(1);
+    filter: grayscale(0);
+}
+
+
+
+
+.left,
+.right{
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    line-height: 40px;
+    background-color: black;
+    color: white;
+    text-align: center;
+    cursor: pointer;
+}
+
+.left{
+    left: -15px;
+}
+.right{
+    right: -15px;
+}
+
+.my-dots{
+    display: flex;
+    justify-content: center;
+    margin-top: 30px;
+    gap: 8px;
+}
+
+.my-dots button{
+    width: 8px;
+    height: 8px;
+    border-radius: 25%;
+    border: none;
+    background-color: #111;
+    color: transparent;
+    transition: 0.3456s;
+}
+
+.my-dots .slick-active button{
+    width: 25px;
+    background-color: rgb(118, 94, 255);
+}
+ #simpleUsage {
+    font-weight: 700;
+    font-size: 50px;
+    text-align: center;
+    color: #353535;
+    padding: 50px 0 100px 0;
+}
